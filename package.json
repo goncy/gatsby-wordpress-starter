@@ -4,6 +4,7 @@
   "description": "Gatsby wordpress starter",
   "license": "MIT",
   "version": "0.0.1",
+  "homepage": "https://goncy.github.io/gatsby-wordpress-starter",
   "author": "Gonzalo Pozzo <gonzalo.pozzo4@gmail.com>",
   "keywords": [
     "gatsby"
@@ -11,7 +12,9 @@
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^1.9.45",
@@ -37,6 +40,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
+    "gh-pages": "^1.0.0",
     "prettier": "^1.7.4"
   }
 }
