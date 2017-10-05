@@ -1,3 +1,3 @@
 # Gatsby + Wordpress starter
 
-DEMO: Coming soon
+DEMO: https://goncy.github.io/gatsby-wordpress-starter
