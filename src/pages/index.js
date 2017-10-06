@@ -14,7 +14,7 @@ class Home extends Component {
           <h1>Pages</h1>
           {data.allWordpressPage.edges.map(({ node }) => (
             <div key={node.slug}>
-              <Link to={node.slug} css={{ textDecoration: `none` }}>
+              <Link to={`/${node.slug}`} css={{ textDecoration: `none` }}>
                 <h3>{node.title}</h3>
               </Link>
               <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
@@ -33,7 +33,7 @@ class Home extends Component {
         <h1>Posts</h1>
         {data.allWordpressPost.edges.map(({ node }) => (
           <div css={{ marginBottom: rhythm(2) }} key={node.slug}>
-            <Link to={node.slug} css={{ textDecoration: `none` }}>
+            <Link to={`/${node.slug}`} css={{ textDecoration: `none` }}>
               <h3>{node.title}</h3>
             </Link>
             <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />

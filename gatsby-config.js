@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/gatsby-wordpress-starter`,
   siteMetadata: {
     title: `A sample site using gatsby-source-wordpress`,
     subtitle: `Data fetched from a site hosted on wordpress.com`
